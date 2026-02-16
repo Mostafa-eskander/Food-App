@@ -41,3 +41,22 @@
   object-fit: contain;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
+
+@media (max-width: 700px) {
+  .header {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .nav ul {
+    font-size: 0.9rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .logo img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

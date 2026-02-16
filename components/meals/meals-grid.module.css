@@ -8,3 +8,9 @@
   list-style: none;
   padding: 0;
 }
+
+@media (max-width: 500px) {
+  .meals {
+    grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+  }
+}
