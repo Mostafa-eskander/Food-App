@@ -5,9 +5,10 @@ import { getMeal } from '@/lib/meals';
 import { notFound } from 'next/navigation';
 
 export async function generateMetadata({params}) {
-    const meal = getMeal(params.mealSlug);
+    const {mealSlug} = await params;
+    const meal = await getMeal(mealSlug);
+
     
-    console.log(meal)
     if(!meal) {
         notFound();
     }
@@ -19,8 +20,9 @@ export async function generateMetadata({params}) {
     };
 }
 
-export default function SlugPage({params}) {
-    const meal = getMeal(params.mealSlug);
+export default async function SlugPage({params}) {
+    const {mealSlug} = await params;
+    const meal = await getMeal(mealSlug);
 
     if(!meal) {
         notFound();
