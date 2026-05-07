@@ -24,39 +24,12 @@ Food App is a modern and responsive food ordering web application built with Rea
 
 ### 🛠️ Built With
 
-- React.js – Frontend library
+- Next.js – Frontend library
 - JavaScript (ES6+)
 - CSS / CSS Modules
 - HTML5
-- React Context API – State Management
 - Vercel – Deployment platform Vercel – Deployment platform
 
----
-
-## 📂 Project Structure
-
-```
-Food-App/
-│
-├── public/
-│
-├── src/
-│   ├── assets/
-│   ├── components/
-│   │   ├── Cart.jsx
-│   │   ├── CartModal.jsx
-│   │   ├── MealItem.jsx
-│   │   ├── Meals.jsx
-│   │   └── Header.jsx
-│   │
-│   ├── store/
-│   │   └── cart-context.jsx
-│   │
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── package.json
-└── README.md
 ```
 
 ---
